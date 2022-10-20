@@ -1,8 +1,9 @@
-import 'package:count_conv_app/Direct/direct.dart';
-import 'package:count_conv_app/Indirect/indirect.dart';
+import 'package:count_conv_app/Direct/direct-direct.dart';
+import 'package:count_conv_app/Direct/direct-indirect.dart';
+import 'package:count_conv_app/Indirect/indirect-direct.dart';
+import 'package:count_conv_app/Indirect/indirect-indirect.dart';
 import 'package:count_conv_app/pages/conversion-choice-page.dart';
 import 'package:count_conv_app/pages/home-page.dart';
-import 'package:count_conv_app/pages/navigation.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -15,15 +16,13 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
-        '/nav': (context) => NavigationPage(),
         '/convpage': (context) => ConversionChoicePage(),
-        '/directmethod': (context) => DirectMethod(),
-        '/indirectmethod': (context) => IndirectMethod(),
+        '/directindirectmethod': (context) => DirectIndirectMethod(),
+        '/indirectdirectmethod': (context) => IndirectDirectMethod(),
+        '/indirectindirectmethod': (context) => IndirectIndirectMethod(),
+        '/directdirectmethod': (context) => DirectDirectMethod(),
       },
       debugShowCheckedModeBanner: false,
-      // theme: ThemeData(
-      // primarySwatch: Color(0xffa58d7f),
-      // ),
     );
   }
 }

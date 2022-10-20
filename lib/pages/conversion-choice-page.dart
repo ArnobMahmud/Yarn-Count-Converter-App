@@ -19,7 +19,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
         actions: [
           IconButton(
             icon: Icon(
-              Mdi.fileQuestion,
+              Mdi.informationOutline,
               color: Color(0xffa58d7f),
               size: 35,
             ),
@@ -49,7 +49,12 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.only(
+              left: 10,
+              right: 10,
+              top: 5,
+              bottom: 5,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -57,12 +62,15 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
                   child: Container(
                     child: Text(
                       'Yarn Count is an integral part of the Textile industry. The spinning mills or weaving mills can not run without it as product costing fully depends on it.',
-                      style: TextStyle(color: Colors.brown[400], fontSize: 18),
+                      style: TextStyle(
+                        color: Colors.brown[400],
+                        fontSize: 17,
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 5,
                 ),
                 Image.asset(
                   'images/thread.png',
@@ -80,32 +88,52 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
             child: Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Color(0xffa58d7d),
+                color: Color(0xffb69e87),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25),
                   topRight: Radius.circular(25),
                 ),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  MethodCard(
-                    onTap: () {
-                      Navigator.pushNamed(context, '/indirectmethod');
-                    },
-                    title: 'Indirect - Direct',
-                    subTitle: 'Ne, Nm, NeS, NeW, NeL - Tex, Den, lbs/spy',
-                    imgData: 'images/yarn5.png',
-                  ),
-                  MethodCard(
-                    onTap: () {
-                      Navigator.pushNamed(context, '/directmethod');
-                    },
-                    title: 'Direct - Indirect',
-                    subTitle: 'Tex, Den, lbs/spy - Ne, Nm, NeS, NeW, NeL',
-                    imgData: 'images/yarn6.png',
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ListView(
+                  padding: EdgeInsets.only(top: 30, left: 0, right: 10),
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    MethodCard(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/indirectdirectmethod');
+                      },
+                      title: 'Indirect - Direct',
+                      subTitle: 'Ne, Nm, NeS, NeW, NeL - Tex, Den, lbs/spy',
+                      imgData: 'images/yarn5.png',
+                    ),
+                    MethodCard(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/directindirectmethod');
+                      },
+                      title: 'Direct - Indirect',
+                      subTitle: 'Tex, Den, lbs/spy - Ne, Nm, NeS, NeW, NeL',
+                      imgData: 'images/yarn6.png',
+                    ),
+                    MethodCard(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/indirectindirectmethod');
+                      },
+                      title: 'Indirect - Indirect',
+                      subTitle: 'Ne, Nm, NeS, NeW, NeL - Ne, Nm, NeS, NeW, NeL',
+                      imgData: 'images/yarn7.png',
+                    ),
+                    MethodCard(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/directdirectmethod');
+                      },
+                      title: 'Direct - Indirect',
+                      subTitle: 'Tex, Den, lbs/spy - Tex, Den, lbs/spy',
+                      imgData: 'images/yarn9.png',
+                    )
+                  ],
+                ),
               ),
             ),
           ),

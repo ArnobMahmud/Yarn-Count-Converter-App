@@ -26,9 +26,9 @@ class MethodCard extends StatelessWidget {
             boxShadow: [
               BoxShadow(
                 offset: Offset(0.0, 0.0),
-                blurRadius: 10.0,
-                spreadRadius: 10.0,
-                color: Color(0xffa58d7d),
+                blurRadius: 15.0,
+                spreadRadius: 5.0,
+                color: Color(0xffa58d7a),
               )
             ],
             child: Padding(
@@ -41,7 +41,7 @@ class MethodCard extends StatelessWidget {
                   borderRadius: BorderRadius.all(
                     Radius.circular(25.0),
                   ),
-                  color: Color(0xffe6d5ce),
+                  color: Color(0xffe7d5c9),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
