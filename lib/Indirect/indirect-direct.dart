@@ -23,7 +23,7 @@ class _IndirectDirectMethodState extends State<IndirectDirectMethod> {
         elevation: 0,
         backgroundColor: Color(0xffd1b399),
         title: Text(
-          'Indirect to Indirect count',
+          'Indirect to Direct count',
           style: TextStyle(
             fontSize: 24,
             color: Colors.blueGrey,
@@ -52,8 +52,7 @@ class _IndirectDirectMethodState extends State<IndirectDirectMethod> {
         ),
         itemCount: conversionInfo.length,
         itemBuilder: (BuildContext context, int index) => SegmentChoice(
-          title: conversionInfo[index].title,
-          subTitle: conversionInfo[index].subTitle,
+          conversionInfo: conversionInfo[index],
         ),
       ),
     );

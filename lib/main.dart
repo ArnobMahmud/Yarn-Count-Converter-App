@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/directdirectmethod': (context) => DirectDirectMethod(),
       },
       debugShowCheckedModeBanner: false,
+      //home: HomePage(),
     );
   }
 }

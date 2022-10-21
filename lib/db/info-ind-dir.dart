@@ -6,6 +6,7 @@ final List<ConversionInfo> conversionInfo = [
     title: 'Ne - Tex',
     subTitle:
         'Ne (Number english) is an indirect count & Tex is a direct count',
+    // calculateNav : IndDirPage(),
   ),
   ConversionInfo(
     id: 2,
@@ -89,3 +90,4 @@ final List<ConversionInfo> conversionInfo = [
         'NeL (Number linen) is an indirect count & lbs/spy is a direct count',
   ),
 ];
+

@@ -78,13 +78,13 @@ final List<ConversionInfo> conversionInfo = [
         'lbs/spy is a direct count & Ne (Number woolen) is an indirect count',
   ),
   ConversionInfo(
-    id: 11,
+    id: 14,
     title: 'lbs/spy - NeS',
     subTitle:
         'lbs/spy is a direct count & Ne (Number worsted) is an indirect count',
   ),
   ConversionInfo(
-    id: 11,
+    id: 15,
     title: 'lbs/spy - NeL',
     subTitle:
         'lbs/spy is a direct count & Ne (Number linen) is an indirect count',

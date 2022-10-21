@@ -1,15 +1,16 @@
+import 'package:count_conv_app/models/conversion-info.dart';
 import 'package:flutter/material.dart';
 
 class SegmentChoice extends StatelessWidget {
-  final String title;
-  final String subTitle;
+  final ConversionInfo conversionInfo;
 
-  const SegmentChoice({Key key, this.title, this.subTitle}) : super(key: key);
+  const SegmentChoice({Key key, this.conversionInfo}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: GestureDetector(
@@ -48,7 +49,7 @@ class SegmentChoice extends StatelessWidget {
                 flex: 1,
               ),
               Text(
-                title,
+                conversionInfo.title,
                 style: TextStyle(
                   fontSize: 22,
                   color: Colors.blueGrey,
@@ -61,7 +62,7 @@ class SegmentChoice extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                subTitle,
+                conversionInfo.subTitle,
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.black38,

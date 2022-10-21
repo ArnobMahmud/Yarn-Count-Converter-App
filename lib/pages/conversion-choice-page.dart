@@ -82,7 +82,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 40,
           ),
           Expanded(
             child: Container(
@@ -128,7 +128,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
                       onTap: () {
                         Navigator.pushNamed(context, '/directdirectmethod');
                       },
-                      title: 'Direct - Indirect',
+                      title: 'Direct - Direct',
                       subTitle: 'Tex, Den, lbs/spy - Tex, Den, lbs/spy',
                       imgData: 'images/yarn9.png',
                     )

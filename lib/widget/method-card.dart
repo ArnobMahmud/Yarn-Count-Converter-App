@@ -35,7 +35,7 @@ class MethodCard extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 height: height * .5,
-                width: width * .45,
+                width: width * .5,
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(

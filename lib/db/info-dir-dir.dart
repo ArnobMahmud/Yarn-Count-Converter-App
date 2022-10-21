@@ -32,3 +32,4 @@ final List<ConversionInfo> conversionInfo = [
     subTitle: 'lbs/spy is a direct count & Den (Denier) is a direct count',
   ),
 ];
+

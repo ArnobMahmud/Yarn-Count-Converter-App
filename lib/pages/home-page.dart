@@ -21,12 +21,13 @@ class HomePage extends StatelessWidget {
           )
         ],
         title: Text(
-          'Count Conv.',
+          'Yarn Count Converter',
           style: TextStyle(
-              fontSize: 30,
-              color: Colors.blueGrey,
-              fontWeight: FontWeight.w300,
-              letterSpacing: 1),
+            fontSize: 30,
+            color: Colors.blueGrey,
+            fontWeight: FontWeight.w300,
+            letterSpacing: 0.9,
+          ),
         ),
       ),
       body: Center(

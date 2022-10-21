@@ -51,8 +51,7 @@ class _IndirectIndirectMethodState extends State<IndirectIndirectMethod> {
         ),
         itemCount: conversionInfo.length,
         itemBuilder: (BuildContext context, int index) => SegmentChoice(
-          title: conversionInfo[index].title,
-          subTitle: conversionInfo[index].subTitle,
+          conversionInfo: conversionInfo[index],
         ),
       ),
     );

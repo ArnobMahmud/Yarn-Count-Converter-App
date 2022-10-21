@@ -50,10 +50,10 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
           childAspectRatio: aspectRatio / .85,
         ),
         itemCount: conversionInfo.length,
-        itemBuilder: (BuildContext context, int index) => SegmentChoice(
-          title: conversionInfo[index].title,
-          subTitle: conversionInfo[index].subTitle,
+          itemBuilder: (BuildContext context, int index) => SegmentChoice(
+          conversionInfo: conversionInfo[index],
         ),
+     
       ),
     );
   }
