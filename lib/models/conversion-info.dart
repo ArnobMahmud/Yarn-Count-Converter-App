@@ -2,12 +2,12 @@ class ConversionInfo {
   int id;
   String title;
   String subTitle;
-  Function calculateNav;
+  String nav;
 
   ConversionInfo({
     this.id,
     this.title,
     this.subTitle,
-    this.calculateNav,
+    this.nav,
   });
 }

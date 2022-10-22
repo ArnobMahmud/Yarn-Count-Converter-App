@@ -14,7 +14,12 @@ class SegmentChoice extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(
+            context,
+            conversionInfo.nav
+          );
+        },
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 20),
           height: height * .4,

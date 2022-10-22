@@ -6,24 +6,28 @@ final List<ConversionInfo> conversionInfo = [
     title: 'Ne - Tex',
     subTitle:
         'Ne (Number english) is an indirect count & Tex is a direct count',
-    // calculateNav : IndDirPage(),
+    nav : '/netotex'
   ),
   ConversionInfo(
     id: 2,
     title: 'Ne - Den',
     subTitle:
         'Ne (Number english) is an indirect count & Den (Denier) is a direct count',
+        nav : 'netoden'
   ),
   ConversionInfo(
     id: 3,
     title: 'Ne - lbs/spy',
     subTitle:
         'Ne (Number english) is an indirect count & lbs/spy is a direct count',
+        nav :'netolbsspy'
   ),
+
   ConversionInfo(
     id: 4,
     title: 'Nm - Tex',
     subTitle: 'Nm (Number metric) is an indirect count & Tex is a direct count',
+
   ),
   ConversionInfo(
     id: 5,

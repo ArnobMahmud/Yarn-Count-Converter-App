@@ -6,6 +6,8 @@ import 'package:count_conv_app/pages/conversion-choice-page.dart';
 import 'package:count_conv_app/pages/home-page.dart';
 import 'package:flutter/material.dart';
 
+import 'brain/NeToTexConvPage.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/indirectdirectmethod': (context) => IndirectDirectMethod(),
         '/indirectindirectmethod': (context) => IndirectIndirectMethod(),
         '/directdirectmethod': (context) => DirectDirectMethod(),
+        '/netotex': (context) => NeToTexConvPage(),
       },
       debugShowCheckedModeBanner: false,
       //home: HomePage(),
