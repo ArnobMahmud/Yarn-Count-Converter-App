@@ -15,11 +15,9 @@ class BrainCard extends StatefulWidget {
 }
 
 class _BrainCardState extends State<BrainCard> {
-
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-    //final width = MediaQuery.of(context).size.width;
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -37,14 +35,14 @@ class _BrainCardState extends State<BrainCard> {
                   borderSide: BorderSide(
                     width: 3,
                   ),
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(50),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
                     width: 2,
                     color: Colors.blueGrey,
                   ),
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(50),
                 ),
                 hintText: widget.hintText,
                 hintStyle: TextStyle(
@@ -53,6 +51,10 @@ class _BrainCardState extends State<BrainCard> {
                 ),
               ),
               onChanged: widget.onChanged,
+              style: TextStyle(
+                fontSize: 22,
+                color: Colors.brown[500],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 50),
@@ -95,8 +97,8 @@ class _BrainCardState extends State<BrainCard> {
                         children: [
                           Image.asset(
                             'images/yarn2.png',
-                            height: 80,
-                            width: 80,
+                            height: 90,
+                            width: 90,
                             fit: BoxFit.cover,
                           ),
                         ],

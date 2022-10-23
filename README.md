@@ -1,6 +1,15 @@
-# count_conv_app
+# Yarn Count Converter
 
-A new Flutter project.
+A departmental project by Arnob Mahmud
+
+
+[![develop-with-arnob](https://img.shields.io/badge/Developed%20by-Arnob%20Mahmud-1f425f.svg?style=plastic&logo=visual-studio-code&logoColor=007ACC&labelColor=c3c4d5&color=193507)](https://github.com/ArnobMahmud/)&nbsp;
+[![wakatime](https://wakatime.com/badge/user/94bcb058-9915-4d5f-8827-41abbc5319de/project/2c97185d-5bd5-462f-ba70-9cfbd8a2d8fa.svg?style=plastic)](https://wakatime.com/badge/user/94bcb058-9915-4d5f-8827-41abbc5319de/project/2c97185d-5bd5-462f-ba70-9cfbd8a2d8fa)&nbsp;
+[![](https://img.shields.io/badge/License-MIT-critical?style=plastic&logo=appveyor&logoColor=a70023&labelColor=lightblue&color=471e61)](https://github.com/ArnobMahmud/Yarn-Count-Converter-App/blob/master/LICENSE)&nbsp;
+
+
+![conv](https://user-images.githubusercontent.com/60808266/197406439-583fc88a-803e-4ee9-8654-c864fa3e317d.PNG)
+
 
 ## Getting Started
 

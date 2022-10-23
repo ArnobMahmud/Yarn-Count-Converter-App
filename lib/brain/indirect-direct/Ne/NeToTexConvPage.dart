@@ -1,6 +1,6 @@
-import 'package:count_conv_app/widget/brain.dart';
+import 'package:count_conv_app/widget/brain-card.dart';
+import 'package:count_conv_app/widget/custom-app-bar.dart';
 import 'package:flutter/material.dart';
-import 'package:mdi/mdi.dart';
 
 class NeToTexConvPage extends StatefulWidget {
   const NeToTexConvPage({Key key}) : super(key: key);
@@ -10,9 +10,10 @@ class NeToTexConvPage extends StatefulWidget {
 }
 
 class _NeToTexConvPageState extends State<NeToTexConvPage> {
+
   double ne = 0;
   double netotex(ne) {
-    if (ne == 0) {
+    if (ne <= 0) {
       return 0;
     }
     return 590.5 / ne;
@@ -20,29 +21,12 @@ class _NeToTexConvPageState extends State<NeToTexConvPage> {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    //final width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Color(0xffdccdbc),
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.blueGrey,
-          ),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
-        elevation: 0.0,
-        backgroundColor: Color(0xffdccdbc),
-        title: Text(
-          'Ne - Tex',
-          style: TextStyle(
-            color: Colors.blueGrey[400],
-            fontWeight: FontWeight.w400,
-            fontSize: 30,
-          ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(60),
+        child: CustomAppBar(
+          title: 'Ne - Tex',
         ),
       ),
       body: BrainCard(
