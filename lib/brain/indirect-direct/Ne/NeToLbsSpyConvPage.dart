@@ -11,7 +11,7 @@ class NeToLbsSpyConvPage extends StatefulWidget {
 
 class _NeToLbsSpyConvPageState extends State<NeToLbsSpyConvPage> {
   double ne = 0;
-  double netotex(ne) {
+  double netolbsspy(ne) {
     if (ne <= 0) {
       return 0;
     }
@@ -44,7 +44,7 @@ class _NeToLbsSpyConvPageState extends State<NeToLbsSpyConvPage> {
           }
         },
         resultTitle: 'Count in lbs/spy - ',
-        result: netotex(ne).toStringAsFixed(2),
+        result: netolbsspy(ne).toStringAsFixed(2),
       ),
     );
   }

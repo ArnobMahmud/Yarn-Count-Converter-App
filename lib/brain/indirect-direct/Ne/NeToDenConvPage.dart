@@ -3,19 +3,19 @@ import 'package:count_conv_app/widget/custom-app-bar.dart';
 import 'package:flutter/material.dart';
 
 class NeToDenConvPage extends StatefulWidget {
-  const NeToDenConvPage({ Key key }) : super(key: key);
+  const NeToDenConvPage({Key key}) : super(key: key);
 
   @override
   State<NeToDenConvPage> createState() => _NeToDenConvPageState();
 }
 
 class _NeToDenConvPageState extends State<NeToDenConvPage> {
-   double ne = 0;
+  double ne = 0;
   double netoden(ne) {
     if (ne == 0) {
       return 0;
     }
-    return 590.5 / ne;
+    return 0.5315 / ne;
   }
 
   @override
@@ -47,6 +47,5 @@ class _NeToDenConvPageState extends State<NeToDenConvPage> {
         result: netoden(ne).toStringAsFixed(2),
       ),
     );
- 
   }
 }

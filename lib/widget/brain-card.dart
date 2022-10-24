@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:mdi/mdi.dart';
 
@@ -87,9 +88,13 @@ class _BrainCardState extends State<BrainCard> {
                         textAlign: TextAlign.center,
                       ),
                       Spacer(),
-                      Text(
+                      AutoSizeText(
                         widget.result,
+                        maxLines: 1,
+                        maxFontSize: 100,
+                        minFontSize: 50,
                         style: TextStyle(color: Colors.brown, fontSize: 100),
+                        textAlign: TextAlign.center,
                       ),
                       Spacer(),
                       Row(
@@ -97,8 +102,8 @@ class _BrainCardState extends State<BrainCard> {
                         children: [
                           Image.asset(
                             'images/yarn2.png',
-                            height: 90,
-                            width: 90,
+                            height: 100,
+                            width: 100,
                             fit: BoxFit.cover,
                           ),
                         ],

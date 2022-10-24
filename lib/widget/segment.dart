@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:count_conv_app/models/conversion-info.dart';
 import 'package:flutter/material.dart';
 
@@ -15,14 +16,11 @@ class SegmentChoice extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(
-            context,
-            conversionInfo.nav
-          );
+          Navigator.pushNamed(context, conversionInfo.nav);
         },
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20),
-          height: height * .4,
+          padding: EdgeInsets.symmetric(horizontal: 15),
+          height: height * .5,
           width: width * .5,
           decoration: BoxDecoration(
             boxShadow: [
@@ -30,10 +28,10 @@ class SegmentChoice extends StatelessWidget {
                 offset: Offset(0.0, 0.0),
                 blurRadius: 10.0,
                 spreadRadius: 10.0,
-                color: Color(0xffb29882),
+                color: Color(0xffbbaea0),
               )
             ],
-            color: Color(0xffe2dac6),
+            color: Color(0xffdccdbc),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(30),
               bottomLeft: Radius.circular(30),
@@ -50,14 +48,14 @@ class SegmentChoice extends StatelessWidget {
                 width: 50,
                 fit: BoxFit.cover,
               ),
-              Spacer(
-                flex: 1,
+              SizedBox(
+                height: 10,
               ),
               Text(
                 conversionInfo.title,
                 style: TextStyle(
                   fontSize: 22,
-                  color: Colors.blueGrey,
+                  color: Colors.blueGrey[600],
                   fontWeight: FontWeight.w500,
                   letterSpacing: 1,
                 ),
@@ -66,17 +64,18 @@ class SegmentChoice extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text(
+              AutoSizeText(
                 conversionInfo.subTitle,
+                maxLines: 5,
+                maxFontSize: 17,
+                minFontSize: 16,
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.black38,
+                  color: Colors.black45,
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              Spacer(
-                flex: 1,
-              ),
+              Spacer(),
             ],
           ),
         ),

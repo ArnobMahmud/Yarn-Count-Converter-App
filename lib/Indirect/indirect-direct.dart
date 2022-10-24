@@ -18,10 +18,10 @@ class _IndirectDirectMethodState extends State<IndirectDirectMethod> {
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(
-      backgroundColor: Color(0xffd1b399),
+      backgroundColor: Color(0xffdccdbc),
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Color(0xffd1b399),
+        elevation: 5,
+        backgroundColor: Color(0xffdccdbc),
         title: Text(
           'Indirect to Direct count',
           style: TextStyle(

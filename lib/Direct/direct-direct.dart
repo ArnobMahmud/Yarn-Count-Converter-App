@@ -17,10 +17,10 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(
-      backgroundColor: Color(0xffd1b399),
+      backgroundColor: Color(0xffdccdbc),
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Color(0xffd1b399),
+        elevation: 5,
+        backgroundColor: Color(0xffdccdbc),
         title: Text(
           'Direct to Direct count',
           style: TextStyle(
@@ -50,10 +50,9 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
           childAspectRatio: aspectRatio / .85,
         ),
         itemCount: conversionInfo.length,
-          itemBuilder: (BuildContext context, int index) => SegmentChoice(
+        itemBuilder: (BuildContext context, int index) => SegmentChoice(
           conversionInfo: conversionInfo[index],
         ),
-     
       ),
     );
   }

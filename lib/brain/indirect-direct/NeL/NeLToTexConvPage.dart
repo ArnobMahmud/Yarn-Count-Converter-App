@@ -2,20 +2,20 @@ import 'package:count_conv_app/widget/brain-card.dart';
 import 'package:count_conv_app/widget/custom-app-bar.dart';
 import 'package:flutter/material.dart';
 
-class NmToTexConvPage extends StatefulWidget {
-  const NmToTexConvPage({Key key}) : super(key: key);
+class NeLToTexConvPage extends StatefulWidget {
+  NeLToTexConvPage({Key key}) : super(key: key);
 
   @override
-  State<NmToTexConvPage> createState() => _NmToTexConvPageState();
+  State<NeLToTexConvPage> createState() => _NeLToTexConvPageState();
 }
 
-class _NmToTexConvPageState extends State<NmToTexConvPage> {
-  double nm = 0;
-  double nmtotex(nm) {
-    if (nm <= 0) {
+class _NeLToTexConvPageState extends State<NeLToTexConvPage> {
+  double neL = 0;
+  double neltotex(neL) {
+    if (neL == 0) {
       return 0;
     }
-    return 1000 / nm;
+    return 1653.4 / neL;
   }
 
   @override
@@ -25,26 +25,26 @@ class _NmToTexConvPageState extends State<NmToTexConvPage> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60),
         child: CustomAppBar(
-          title: 'Nm - Tex',
+          title: 'NeL - Tex',
         ),
       ),
       body: BrainCard(
-        hintText: 'Count in Nm :',
+        hintText: 'Count in NeL :',
         onChanged: (value) {
           if (value.isEmpty) {
             setState(
-              () => nm = 0,
+              () => neL = 0,
             );
           } else {
             setState(
               () {
-                nm = double.parse(value);
+                neL = double.parse(value);
               },
             );
           }
         },
         resultTitle: 'Count in Tex - ',
-        result: nmtotex(nm).toStringAsFixed(2),
+        result: neltotex(neL).toStringAsFixed(2),
       ),
     );
   }

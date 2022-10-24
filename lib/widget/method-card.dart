@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:clip_shadow/clip_shadow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
@@ -28,7 +29,7 @@ class MethodCard extends StatelessWidget {
                 offset: Offset(0.0, 0.0),
                 blurRadius: 15.0,
                 spreadRadius: 5.0,
-                color: Color(0xffa58d7a),
+                color: Color(0xff9b8673),
               )
             ],
             child: Padding(
@@ -41,10 +42,10 @@ class MethodCard extends StatelessWidget {
                   borderRadius: BorderRadius.all(
                     Radius.circular(25.0),
                   ),
-                  color: Color(0xffe7d5c9),
+                  color: Color(0xffdccdbc),
                 ),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Spacer(
                       flex: 4,
@@ -54,7 +55,7 @@ class MethodCard extends StatelessWidget {
                         title,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Colors.blueGrey[400],
+                          color: Colors.blueGrey[700],
                           fontSize: 23,
                         ),
                       ),
@@ -62,11 +63,14 @@ class MethodCard extends StatelessWidget {
                     SizedBox(
                       height: 20,
                     ),
-                    Text(
+                    AutoSizeText(
                       subTitle,
+                      maxFontSize: 20,
+                      minFontSize: 18,
+                      maxLines: 2,
                       style: TextStyle(
-                        color: Colors.brown[400],
-                        fontSize: 19,
+                        color: Colors.brown[600],
+                        fontSize: 20,
                       ),
                     ),
                     Spacer(

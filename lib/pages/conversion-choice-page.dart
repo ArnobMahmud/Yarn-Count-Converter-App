@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:count_conv_app/widget/method-card.dart';
 import 'package:flutter/material.dart';
 import 'package:mdi/mdi.dart';
@@ -21,7 +22,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
             icon: Icon(
               Mdi.informationOutline,
               color: Color(0xffa58d7f),
-              size: 35,
+              size: 30,
             ),
             onPressed: () {},
           ),
@@ -60,11 +61,14 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
               children: [
                 Flexible(
                   child: Container(
-                    child: Text(
+                    child: AutoSizeText(
                       'Yarn Count is an integral part of the Textile industry. The spinning mills or weaving mills can not run without it as product costing fully depends on it.',
+                      maxLines: 5,
+                      minFontSize: 17,
+                      maxFontSize: 19,
                       style: TextStyle(
                         color: Colors.brown[400],
-                        fontSize: 17,
+                        fontSize: 19,
                       ),
                     ),
                   ),
