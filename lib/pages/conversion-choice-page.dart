@@ -20,11 +20,13 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
         actions: [
           IconButton(
             icon: Icon(
-              Mdi.informationOutline,
+              Mdi.information,
               color: Color(0xffa58d7f),
               size: 30,
             ),
-            onPressed: () {},
+            onPressed: () {
+                Navigator.pushNamed(context, ('/infopage'));
+            },
           ),
         ],
         backgroundColor: Color(0xffdccdbc),

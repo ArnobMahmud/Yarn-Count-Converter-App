@@ -25,7 +25,7 @@ class _NeSToTexConvPageState extends State<NeSToTexConvPage> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60),
         child: CustomAppBar(
-          title: 'NeW - Tex',
+          title: 'NeS - Tex',
         ),
       ),
       body: BrainCard(

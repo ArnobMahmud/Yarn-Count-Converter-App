@@ -4,6 +4,7 @@ import 'package:count_conv_app/Indirect/indirect-direct.dart';
 import 'package:count_conv_app/Indirect/indirect-indirect.dart';
 import 'package:count_conv_app/pages/conversion-choice-page.dart';
 import 'package:count_conv_app/pages/home-page.dart';
+import 'package:count_conv_app/info/info-page.dart';
 import 'package:flutter/material.dart';
 
 import 'brain/indirect-direct/Ne/NeToDenConvPage.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/convpage': (context) => ConversionChoicePage(),
+        '/infopage' :(context) => InfoPage(),
         '/directindirectmethod': (context) => DirectIndirectMethod(),
         '/indirectdirectmethod': (context) => IndirectDirectMethod(),
         '/indirectindirectmethod': (context) => IndirectIndirectMethod(),
@@ -54,7 +56,6 @@ class MyApp extends StatelessWidget {
         '/neltolbsspy': (context) => NeLToLbsSpyConvPage(),
       },
       debugShowCheckedModeBanner: false,
-      //home: HomePage(),
     );
   }
 }

@@ -11,3 +11,15 @@ class ConversionInfo {
     this.nav,
   });
 }
+
+class CountInfo {
+  int id;
+  String title;
+  String desc;
+
+  CountInfo({
+    this.id,
+    this.title,
+    this.desc
+  });
+}

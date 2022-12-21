@@ -65,6 +65,14 @@ class HomePage extends StatelessWidget {
                   height: 60,
                   width: 200,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0.0, 0.0),
+                        blurRadius: 10.0,
+                        spreadRadius: 2.0,
+                        color: Color(0xfff4d7cc),
+                      ),
+                    ],
                     color: Color(0xffd4bbb1),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
@@ -83,36 +91,6 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, '/toplvl');
-            //   },
-            //   child: Padding(
-            //     padding: const EdgeInsets.only(
-            //         top: 15, left: 25, right: 25, bottom: 15),
-            //     child: Text(
-            //       "Explore",
-            //       style: TextStyle(
-            //         fontSize: 22,
-            //         color: Colors.blueGrey[600],
-            //       ),
-            //     ),
-            //   ),
-            //   style: ElevatedButton.styleFrom(
-            //     primary: Colors.blueGrey[100],
-            //     // side: BorderSide(color: Colors.yellow, width: 5),
-            //     textStyle: const TextStyle(
-            //         color: Colors.white,
-            //         fontSize: 25,
-            //         fontStyle: FontStyle.normal),
-            //     shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.only(
-            //         topLeft: Radius.circular(25),
-            //         bottomRight: Radius.circular(25),
-            //       ),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),
