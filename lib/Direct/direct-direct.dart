@@ -17,15 +17,15 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(
-      backgroundColor: Color(0xffdccdbc),
+      backgroundColor: Color(0xffd9d0c1),
       appBar: AppBar(
-        elevation: 5,
-        backgroundColor: Color(0xffdccdbc),
+        elevation: 0,
+        backgroundColor: Color(0xffd9d0c1),
         title: Text(
-          'Direct to Direct count',
+          'Indirect to Direct count',
           style: TextStyle(
             fontSize: 24,
-            color: Colors.blueGrey,
+            color: Color(0xff5c4450),
             fontWeight: FontWeight.w500,
             letterSpacing: 1,
           ),
@@ -44,10 +44,10 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
       body: GridView.builder(
         padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisSpacing: 25,
-          mainAxisSpacing: 25,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 20,
           crossAxisCount: 2,
-          childAspectRatio: aspectRatio / .85,
+          childAspectRatio: aspectRatio / .9,
         ),
         itemCount: conversionInfo.length,
         itemBuilder: (BuildContext context, int index) => SegmentChoice(

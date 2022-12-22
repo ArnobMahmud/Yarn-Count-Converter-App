@@ -27,11 +27,11 @@ class SegmentChoice extends StatelessWidget {
               BoxShadow(
                 offset: Offset(0.0, 0.0),
                 blurRadius: 10.0,
-                spreadRadius: 10.0,
-                color: Color(0xffbbaea0),
+                spreadRadius: 8.0,
+                color: Color(0xffb8b3ab),
               )
             ],
-            color: Color(0xffdccdbc),
+            color: Color(0xff373e02),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(30),
               bottomLeft: Radius.circular(30),
@@ -55,7 +55,7 @@ class SegmentChoice extends StatelessWidget {
                 conversionInfo.title,
                 style: TextStyle(
                   fontSize: 22,
-                  color: Colors.blueGrey[600],
+                  color: Color(0xffbfefff),
                   fontWeight: FontWeight.w500,
                   letterSpacing: 1,
                 ),
@@ -71,7 +71,7 @@ class SegmentChoice extends StatelessWidget {
                 minFontSize: 16,
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.black45,
+                  color: Color(0xffe5e4e2),
                   fontWeight: FontWeight.w500,
                 ),
               ),

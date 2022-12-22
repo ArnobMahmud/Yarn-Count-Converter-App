@@ -2,22 +2,21 @@ import 'package:count_conv_app/widget/brain-card.dart';
 import 'package:count_conv_app/widget/custom-app-bar.dart';
 import 'package:flutter/material.dart';
 
-class NeToDenConvPage extends StatefulWidget {
-  const NeToDenConvPage({Key key}) : super(key: key);
+class TexToNmConvPage extends StatefulWidget {
+  const TexToNmConvPage({ Key key }) : super(key: key);
 
   @override
-  State<NeToDenConvPage> createState() => _NeToDenConvPageState();
+  State<TexToNmConvPage> createState() => _TexToNmConvPageState();
 }
 
-class _NeToDenConvPageState extends State<NeToDenConvPage> {
-  double ne = 0;
-  double netoden(ne) {
-    if (ne == 0) {
+class _TexToNmConvPageState extends State<TexToNmConvPage> {
+  double tex = 0;
+  double textonm(tex) {
+    if (tex <= 0) {
       return 0;
     }
-    return 5314.5 / ne;
+    return 1001.01 / tex;
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,27 +24,28 @@ class _NeToDenConvPageState extends State<NeToDenConvPage> {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60),
         child: CustomAppBar(
-          title: 'Ne - Den',
+          title: 'Tex - Nm',
         ),
       ),
       body: BrainCard(
-        hintText: 'Count in Ne :',
+        hintText: 'Count in Tex :',
         onChanged: (value) {
           if (value.isEmpty) {
             setState(
-              () => ne = 0,
+              () => tex = 0,
             );
           } else {
             setState(
               () {
-                ne = double.parse(value);
+                tex = double.parse(value);
               },
             );
           }
         },
-        resultTitle: 'Count in Den - ',
-        result: netoden(ne).toStringAsFixed(2),
+        resultTitle: 'Count in Nm - ',
+        result: textonm(tex).toStringAsFixed(2),
       ),
     );
+
   }
 }

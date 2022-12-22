@@ -2,11 +2,26 @@ import 'package:count_conv_app/Direct/direct-direct.dart';
 import 'package:count_conv_app/Direct/direct-indirect.dart';
 import 'package:count_conv_app/Indirect/indirect-direct.dart';
 import 'package:count_conv_app/Indirect/indirect-indirect.dart';
+import 'package:count_conv_app/brain/direct-indirect/Den/DenToNeConvPage.dart';
 import 'package:count_conv_app/pages/conversion-choice-page.dart';
 import 'package:count_conv_app/pages/home-page.dart';
 import 'package:count_conv_app/info/info-page.dart';
 import 'package:flutter/material.dart';
 
+import 'brain/direct-indirect/Den/DenToNeLConvPage.dart';
+import 'brain/direct-indirect/Den/DenToNeSConvPage.dart';
+import 'brain/direct-indirect/Den/DenToNeWConvPage.dart';
+import 'brain/direct-indirect/Den/DenToNmConvPage.dart';
+import 'brain/direct-indirect/Tex/TexToNeConvPage.dart';
+import 'brain/direct-indirect/Tex/TexToNeLConvPage.dart';
+import 'brain/direct-indirect/Tex/TexToNeSConvPage.dart';
+import 'brain/direct-indirect/Tex/TexToNeWConvPage.dart';
+import 'brain/direct-indirect/Tex/TexToNmConvPage.dart';
+import 'brain/direct-indirect/lbs-spy/LbsSpyToNeConvPage.dart';
+import 'brain/direct-indirect/lbs-spy/LbsSpyToNeLConvPage.dart';
+import 'brain/direct-indirect/lbs-spy/LbsSpyToNeSConvPage.dart';
+import 'brain/direct-indirect/lbs-spy/LbsSpyToNeWConvPage.dart';
+import 'brain/direct-indirect/lbs-spy/LbsSpyToNmConvPage.dart';
 import 'brain/indirect-direct/Ne/NeToDenConvPage.dart';
 import 'brain/indirect-direct/Ne/NeToLbsSpyConvPage.dart';
 import 'brain/indirect-direct/Ne/NeToTexConvPage.dart';
@@ -34,7 +49,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomePage(),
         '/convpage': (context) => ConversionChoicePage(),
-        '/infopage' :(context) => InfoPage(),
+        '/infopage': (context) => InfoPage(),
         '/directindirectmethod': (context) => DirectIndirectMethod(),
         '/indirectdirectmethod': (context) => IndirectDirectMethod(),
         '/indirectindirectmethod': (context) => IndirectIndirectMethod(),
@@ -54,6 +69,21 @@ class MyApp extends StatelessWidget {
         '/neltotex': (context) => NeLToTexConvPage(),
         '/neltoden': (context) => NeLToDenConvPage(),
         '/neltolbsspy': (context) => NeLToLbsSpyConvPage(),
+        '/textone': (context) => TexToNeConvPage(),
+        '/textonm': (context) => TexToNmConvPage(),
+        '/textones': (context) => TexToNeSConvPage(),
+        '/textonew': (context) => TexToNeWConvPage(),
+        '/textonel': (context) => TexToNeLConvPage(),
+        '/dentone': (context) => DenToNeConvPage(),
+        '/dentonm': (context) => DenToNmConvPage(),
+        '/dentones': (context) => DenToNeSConvPage(),
+        '/dentonew': (context) => DenToNeWConvPage(),
+        '/dentonel': (context) => DenToNeLConvPage(),
+        '/lbsspytone': (context) => LbsSpyToNeConvPage(),
+        '/lbsspytonew': (context) => LbsSpyToNeWConvPage(),
+        '/lbsspytones': (context) => LbsSpyToNeSConvPage(),
+        '/lbsspytonel': (context) => LbsSpyToNeLConvPage(),
+        '/lbsspytonm': (context) => LbsSpyToNmConvPage(),
       },
       debugShowCheckedModeBanner: false,
     );
