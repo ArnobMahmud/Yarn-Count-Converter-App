@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.count_conv_app">
    <application
-        android:label="count_conv_app"
+        android:label="Count Converter"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

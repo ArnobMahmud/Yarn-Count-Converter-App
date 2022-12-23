@@ -25,7 +25,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
               size: 30,
             ),
             onPressed: () {
-                Navigator.pushNamed(context, ('/infopage'));
+              Navigator.pushNamed(context, ('/infopage'));
             },
           ),
         ],
@@ -40,12 +40,15 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
             Navigator.pop(context);
           },
         ),
-        title: Text(
-          'Method',
-          style: TextStyle(
-            fontWeight: FontWeight.w400,
-            color: Color(0xffa58d7f),
-            fontSize: 30,
+        title: Transform(
+          transform: Matrix4.translationValues(-20.0, 0.0, 0.0),
+          child: Text(
+            'Method',
+            style: TextStyle(
+              fontWeight: FontWeight.w400,
+              color: Color(0xffa58d7f),
+              fontSize: 30,
+            ),
           ),
         ),
       ),
@@ -96,7 +99,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
               decoration: BoxDecoration(
                 color: Color(0xffb69e87),
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(25),
+                  topLeft: Radius.circular(30),
                   topRight: Radius.circular(25),
                 ),
               ),

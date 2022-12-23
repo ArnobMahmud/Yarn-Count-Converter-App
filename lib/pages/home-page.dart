@@ -6,9 +6,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfffff6d9),
+      backgroundColor: Color(0xffeee3dd),
       appBar: AppBar(
-        backgroundColor: Color(0xfffff6d9),
+        backgroundColor: Color(0xffeee3dd),
         elevation: 0.0,
         actions: [
           IconButton(
@@ -23,10 +23,10 @@ class HomePage extends StatelessWidget {
         title: Text(
           'Yarn Count Converter',
           style: TextStyle(
-            fontSize: 30,
-            color: Colors.blueGrey,
-            fontWeight: FontWeight.w300,
-            letterSpacing: 0.9,
+            fontSize: 24,
+            color: Colors.blueGrey[400],
+            fontWeight: FontWeight.w400,
+            letterSpacing: 1,
           ),
         ),
       ),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                 'In the textile industry, the yarn count is used to express how fine or coarse (or thin or thick) the yarn is. We use the English count numbering system, which is part of a larger group known as indirect counting systems.',
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.blueGrey,
+                  color: Color(0xff927288),
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -68,12 +68,12 @@ class HomePage extends StatelessWidget {
                     boxShadow: [
                       BoxShadow(
                         offset: Offset(0.0, 0.0),
-                        blurRadius: 10.0,
+                        blurRadius: 5.0,
                         spreadRadius: 2.0,
-                        color: Color(0xfff4d7cc),
+                        color: Color(0xffcac1bc),
                       ),
                     ],
-                    color: Color(0xffd4bbb1),
+                    color: Color(0xff38393f),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30),
@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
                       "Explore",
                       style: TextStyle(
                         fontSize: 23,
-                        color: Color(0xfffdfff5),
+                        color: Color(0xfff6cefc),
                       ),
                     ),
                   ),

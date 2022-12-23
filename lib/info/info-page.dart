@@ -21,11 +21,14 @@ class InfoPage extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        title: Text(
-          'Yarn Count Measurement',
-          style: TextStyle(
-            color: Color(0xff4d4860),
-            fontSize: 26,
+        title: Transform(
+          transform: Matrix4.translationValues(-20.0, 0.0, 0.0),
+          child: Text(
+            'Yarn Count Measurement',
+            style: TextStyle(
+              color: Color(0xff4d4860),
+              fontSize: 26,
+            ),
           ),
         ),
       ),

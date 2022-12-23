@@ -12,17 +12,20 @@ class DirectIndirectMethod extends StatelessWidget {
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(
-      backgroundColor: Color(0xffd9d0c1),
+      backgroundColor: Color(0xffebced5),
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Color(0xffd9d0c1),
-        title: Text(
-          'Indirect to Direct count',
-          style: TextStyle(
-            fontSize: 24,
-            color: Color(0xff5c4450),
-            fontWeight: FontWeight.w500,
-            letterSpacing: 1,
+        backgroundColor: Color(0xffebced5),
+        title: Transform(
+          transform: Matrix4.translationValues(-20.0, 0.0, 0.0),
+          child: Text(
+            'Direct to Indirect',
+            style: TextStyle(
+              fontSize: 24,
+              color: Color(0xff5c4450),
+              fontWeight: FontWeight.w500,
+              letterSpacing: 1,
+            ),
           ),
         ),
         leading: IconButton(

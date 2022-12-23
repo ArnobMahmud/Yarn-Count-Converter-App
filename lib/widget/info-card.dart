@@ -8,6 +8,9 @@ class InfoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Container(
@@ -18,8 +21,6 @@ class InfoCard extends StatelessWidget {
             bottomLeft: Radius.circular(30),
           ),
           color: Color(0xff4a2c2a),
-          //673147
-          //4f284b
           boxShadow: [
             BoxShadow(
               offset: Offset(0.0, 0.0),
@@ -29,7 +30,7 @@ class InfoCard extends StatelessWidget {
             )
           ],
         ),
-        height: 280,
+        height: height * .45,
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

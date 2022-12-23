@@ -37,6 +37,18 @@ import 'brain/indirect-direct/NeW/NeWToTexConvPage.dart';
 import 'brain/indirect-direct/Nm/NmToDenConvPage.dart';
 import 'brain/indirect-direct/Nm/NmToLbsSpyConvPage.dart';
 import 'brain/indirect-direct/Nm/NmToTexConvPage.dart';
+import 'brain/indirect-indirect/Ne/NeToNeLConvPage.dart';
+import 'brain/indirect-indirect/Ne/NeToNeSConvPage.dart';
+import 'brain/indirect-indirect/Ne/NeToNeWConvPage.dart';
+import 'brain/indirect-indirect/Ne/NeToNmConvPage.dart';
+import 'brain/indirect-indirect/NeL/NeLToNeConvPage.dart';
+import 'brain/indirect-indirect/NeL/NeLToNeSConvPage.dart';
+import 'brain/indirect-indirect/NeL/NeLToNeWConvPage.dart';
+import 'brain/indirect-indirect/NeL/NeLToNmConvPage.dart';
+import 'brain/indirect-indirect/NeS/NeSToNeConvPage.dart';
+import 'brain/indirect-indirect/NeS/NeSToNeLConvPage.dart';
+import 'brain/indirect-indirect/NeS/NeSToNeWConvPage.dart';
+import 'brain/indirect-indirect/NeS/NeSToNmConvPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -84,8 +96,23 @@ class MyApp extends StatelessWidget {
         '/lbsspytones': (context) => LbsSpyToNeSConvPage(),
         '/lbsspytonel': (context) => LbsSpyToNeLConvPage(),
         '/lbsspytonm': (context) => LbsSpyToNmConvPage(),
+        '/netonm': (context) => NeToNmConvPage(),
+        '/netonew': (context) => NeToNeWConvPage(),
+        '/netones': (context) => NeToNeSConvPage(),
+        '/netonel': (context) => NeToNeLConvPage(),
+        '/neltone': (context) => NeLToNeConvPage(),
+        '/neltonm': (context) => NeLToNmConvPage(),
+        '/neltones': (context) => NeLToNeSConvPage(),
+        '/neltonew': (context) => NeLToNeWConvPage(),
+        '/nestone': (context) => NeSToNeConvPage(),
+        '/nestonel': (context) => NeSToNeLConvPage(),
+        '/nestonew': (context) => NeSToNeWConvPage(),
+        '/nestonm': (context) => NeSToNmConvPage(),
       },
       debugShowCheckedModeBanner: false,
     );
   }
+}
+
+class NeSToNeSConvPage {
 }
