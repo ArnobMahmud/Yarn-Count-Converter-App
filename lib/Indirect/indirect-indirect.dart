@@ -1,4 +1,4 @@
-import 'package:count_conv_app/db/info-ind-ind.dart';
+import 'package:count_conv_app/db/info-dir-ind.dart';
 import 'package:count_conv_app/widget/segment.dart';
 import 'package:flutter/material.dart';
 
@@ -12,8 +12,8 @@ class IndirectIndirectMethod extends StatefulWidget {
 class _IndirectIndirectMethodState extends State<IndirectIndirectMethod> {
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
+    //final height = MediaQuery.of(context).size.height;
+    //final width = MediaQuery.of(context).size.width;
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(

@@ -1,4 +1,4 @@
-package com.example.count_conv_app
+package com.example.yarn_count_converter
 
 import io.flutter.embedding.android.FlutterActivity
 

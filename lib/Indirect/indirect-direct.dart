@@ -1,6 +1,5 @@
 import 'package:count_conv_app/db/info-ind-dir.dart';
 import 'package:count_conv_app/widget/segment.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class IndirectDirectMethod extends StatefulWidget {

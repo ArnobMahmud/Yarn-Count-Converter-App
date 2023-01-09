@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
@@ -48,7 +49,7 @@ class HomePage extends StatelessWidget {
               ),
               child: Text(
                 'In the textile industry, the yarn count is used to express how fine or coarse (or thin or thick) the yarn is. We use the English count numbering system, which is part of a larger group known as indirect counting systems.',
-                style: TextStyle(
+                style: GoogleFonts.roboto(
                   fontSize: 18,
                   color: Color(0xff927288),
                   fontWeight: FontWeight.w400,

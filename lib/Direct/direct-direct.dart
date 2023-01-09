@@ -12,8 +12,8 @@ class DirectDirectMethod extends StatefulWidget {
 class _DirectDirectMethodState extends State<DirectDirectMethod> {
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
+    //final height = MediaQuery.of(context).size.height;
+    //final width = MediaQuery.of(context).size.width;
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(

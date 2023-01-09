@@ -1,13 +1,12 @@
-import 'package:count_conv_app/Direct/direct-direct.dart';
 import 'package:count_conv_app/Direct/direct-indirect.dart';
-import 'package:count_conv_app/Indirect/indirect-direct.dart';
-import 'package:count_conv_app/Indirect/indirect-indirect.dart';
-import 'package:count_conv_app/brain/direct-indirect/Den/DenToNeConvPage.dart';
+import 'package:count_conv_app/info/info-page.dart';
 import 'package:count_conv_app/pages/conversion-choice-page.dart';
 import 'package:count_conv_app/pages/home-page.dart';
-import 'package:count_conv_app/info/info-page.dart';
 import 'package:flutter/material.dart';
-
+import 'Direct/direct-direct.dart';
+import 'Indirect/indirect-direct.dart';
+import 'Indirect/indirect-indirect.dart';
+import 'brain/direct-indirect/Den/DenToNeConvPage.dart';
 import 'brain/direct-indirect/Den/DenToNeLConvPage.dart';
 import 'brain/direct-indirect/Den/DenToNeSConvPage.dart';
 import 'brain/direct-indirect/Den/DenToNeWConvPage.dart';
@@ -112,7 +111,4 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
     );
   }
-}
-
-class NeSToNeSConvPage {
 }
