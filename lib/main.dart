@@ -3,6 +3,12 @@ import 'Direct/direct_direct.dart';
 import 'Direct/direct_indirect.dart';
 import 'Indirect/indirect_direct.dart';
 import 'Indirect/indirect_indirect.dart';
+import 'brain/direct-direct/Den/den_to_lbs_spy_conv_page.dart';
+import 'brain/direct-direct/Den/den_to_tex_conv_page.dart';
+import 'brain/direct-direct/Tex/tex_to_den_conv_page.dart';
+import 'brain/direct-direct/Tex/tex_to_lbs_spy_conv_page.dart';
+import 'brain/direct-direct/lbs-spy/lbs_spy_to_den_conv_page.dart';
+import 'brain/direct-direct/lbs-spy/lbs_spy_to_tex_conv_page.dart';
 import 'brain/direct-indirect/Den/den_to_ne_conv_page.dart';
 import 'brain/direct-indirect/Den/den_to_nel_conv_page.dart';
 import 'brain/direct-indirect/Den/den_to_nes_conv_page.dart';
@@ -58,9 +64,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       initialRoute: '/',
+      initialRoute: '/',
       routes: {
-        '/': (context) =>  const HomePage(),
+        '/': (context) => const HomePage(),
         '/convpage': (context) => const ConversionChoicePage(),
         '/infopage': (context) => const InfoPage(),
         '/directindirectmethod': (context) => const DirectIndirectMethod(),
@@ -74,9 +80,9 @@ class MyApp extends StatelessWidget {
         '/nmtoden': (context) => const NmToDenConvPage(),
         '/nmtolbsspy': (context) => const NmToLbsSpyConvPage(),
         '/newtotex': (context) => const NeWToTexConvPage(),
-        '/newtoden': (context) =>const  NeWToDenConvPage(),
+        '/newtoden': (context) => const NeWToDenConvPage(),
         '/newtolbsspy': (context) => const NeWToLbsSpyConvPage(),
-        '/nestotex': (context) =>const  NeSToTexConvPage(),
+        '/nestotex': (context) => const NeSToTexConvPage(),
         '/nestoden': (context) => const NeSToDenConvPage(),
         '/nestolbsspy': (context) => const NeSToLbsSpyConvPage(),
         '/neltotex': (context) => const NeLToTexConvPage(),
@@ -99,16 +105,22 @@ class MyApp extends StatelessWidget {
         '/lbsspytonm': (context) => const LbsSpyToNmConvPage(),
         '/netonm': (context) => const NeToNmConvPage(),
         '/netonew': (context) => const NeToNeWConvPage(),
-        '/netones': (context) =>const  NeToNeSConvPage(),
+        '/netones': (context) => const NeToNeSConvPage(),
         '/netonel': (context) => const NeToNeLConvPage(),
         '/neltone': (context) => const NeLToNeConvPage(),
         '/neltonm': (context) => const NeLToNmConvPage(),
-        '/neltones': (context) =>const  NeLToNeSConvPage(),
+        '/neltones': (context) => const NeLToNeSConvPage(),
         '/neltonew': (context) => const NeLToNeWConvPage(),
         '/nestone': (context) => const NeSToNeConvPage(),
         '/nestonel': (context) => const NeSToNeLConvPage(),
         '/nestonew': (context) => const NeSToNeWConvPage(),
         '/nestonm': (context) => const NeSToNmConvPage(),
+        '/textoden': (context) => const TexToDenConvPage(),
+        '/textolbsspy': (context) => const TexToLbsSpyConvPage(),
+        '/dentotex': (context) => const DenToTexConvPage(),
+        '/dentolbsspy': (context) => const DenToLbsSpyConvPage(),
+        '/lbsspytotex': (context) => const LbsSpyToTexConvPage(),
+        '/lbsspytoden': (context) => const LbsSpyToDenConvPage(),
       },
       debugShowCheckedModeBanner: false,
     );

@@ -1,7 +1,7 @@
 import '../models/conversion_info.dart';
 
 final List<CountInfo> countInfo = [
-  CountInfo(
+  CountInfo( 
       id: 1,
       title: 'Ne (English Cotton Count)',
       desc:

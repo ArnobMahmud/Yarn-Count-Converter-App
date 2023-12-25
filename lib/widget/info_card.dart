@@ -1,6 +1,5 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-
 import '../models/conversion_info.dart';
 
 class InfoCard extends StatelessWidget {
@@ -10,18 +9,17 @@ class InfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
-    //final width = MediaQuery.of(context).size.width;
 
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.all(20.0),
       child: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(15),
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(30),
             bottomLeft: Radius.circular(30),
           ),
-          color: Color(0xff4a2c2a),
+          color: Color.fromARGB(240, 74, 44, 42),
           boxShadow: [
             BoxShadow(
               offset: Offset(0.0, 0.0),

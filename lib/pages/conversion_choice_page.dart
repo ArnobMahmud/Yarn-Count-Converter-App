@@ -97,8 +97,8 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
               decoration: const BoxDecoration(
                 color: Color(0xffb69e87),
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(25),
+                  //topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
                 ),
               ),
               child: Padding(

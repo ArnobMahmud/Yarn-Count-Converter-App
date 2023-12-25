@@ -32,11 +32,71 @@ class InfoPage extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView.builder(
-        itemCount: countInfo.length,
-        itemBuilder: (BuildContext context, int index) => InfoCard(
-          countInfo: countInfo[index],
-        ),
+      body: Stack(
+        children: [
+          Positioned(
+            top: 30,
+            left: 0,
+            height: 250,
+            width: 300,
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(117, 121, 142, 122),
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(500),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 30,
+            right: 0,
+            height: 250,
+            width: 300,
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(117, 121, 142, 122),
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(500),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            right: 10,
+            height: 50,
+            width: 50,
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(117, 121, 142, 122),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(50),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 10,
+            left: 10,
+            height: 50,
+            width: 50,
+            child: Container(
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(117, 121, 142, 122),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(50),
+                ),
+              ),
+            ),
+          ),
+          ListView.builder(
+            itemCount: countInfo.length,
+            itemBuilder: (BuildContext context, int index) => InfoCard(
+              countInfo: countInfo[index],
+            ),
+          ),
+        ],
       ),
     );
   }
