@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../db/count_info.dart';
-import '../widget/info_card.dart';
 
 class InfoPage extends StatelessWidget {
   const InfoPage({super.key});
@@ -21,14 +20,11 @@ class InfoPage extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        title: Transform(
-          transform: Matrix4.translationValues(-20.0, 0.0, 0.0),
-          child: const Text(
-            'Yarn Count Measurement',
-            style: TextStyle(
-              color: Color(0xff4d4860),
-              fontSize: 26,
-            ),
+        title: const Text(
+          'Yarn Count Measurement',
+          style: TextStyle(
+            color: Color(0xff4d4860),
+            fontSize: 18,
           ),
         ),
       ),
@@ -92,9 +88,54 @@ class InfoPage extends StatelessWidget {
           ),
           ListView.builder(
             itemCount: countInfo.length,
-            itemBuilder: (BuildContext context, int index) => InfoCard(
-              countInfo: countInfo[index],
-            ),
+            itemBuilder: (BuildContext context, int index) {
+              return Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                    ),
+                    color: Color.fromARGB(240, 74, 44, 42),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0.0, 0.0),
+                        blurRadius: 5.0,
+                        spreadRadius: 3.0,
+                        color: Color(0xffb29882),
+                      )
+                    ],
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        countInfo[index].title!,
+                        style: const TextStyle(
+                          color: Color(0xffedd59e),
+                          fontSize: 18,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      Text(
+                        countInfo[index].desc!,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          letterSpacing: 1,
+                          color: Color(0xffe2c28e),
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),

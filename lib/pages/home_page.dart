@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(
               Icons.ac_unit,
-              size: 30,
+              size: 26,
               color: Color.fromARGB(255, 87, 111, 122),
             ),
             onPressed: () {},
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
         title: const Text(
           'Yarn Count Converter',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 16,
             color: Color.fromARGB(255, 80, 122, 143),
             fontWeight: FontWeight.w400,
             letterSpacing: 1,
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
               child: Text(
                 'In the textile industry, the yarn count is used to express how fine or coarse (or thin or thick) the yarn is. We use the English count numbering system, which is part of a larger group known as indirect counting systems.',
                 style: GoogleFonts.roboto(
-                  fontSize: 18,
+                  fontSize: 16,
                   color: const Color.fromARGB(255, 125, 100, 117),
                   fontWeight: FontWeight.w400,
                 ),
@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
                     child: Text(
                       "Explore",
                       style: TextStyle(
-                        fontSize: 23,
+                        fontSize: 17,
                         color: Color(0xfff6cefc),
                       ),
                     ),

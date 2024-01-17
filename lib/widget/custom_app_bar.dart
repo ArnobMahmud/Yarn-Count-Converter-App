@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
         style: TextStyle(
           color: Colors.blueGrey[400],
           fontWeight: FontWeight.w400,
-          fontSize: 30,
+          fontSize: 22,
         ),
       ),
     );

@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:shadow_clip/shadow_clip.dart';
@@ -48,10 +47,10 @@ class MethodCard extends StatelessWidget {
                   color: Color(0xffdccdbc),
                 ),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     const Spacer(
-                      flex: 4,
+                      flex: 2,
                     ),
                     Center(
                       child: Text(
@@ -59,26 +58,21 @@ class MethodCard extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.blueGrey[700],
-                          fontSize: 23,
+                          fontSize: 20,
                         ),
                       ),
                     ),
                     const SizedBox(
                       height: 20,
                     ),
-                    AutoSizeText(
+                    Text(
                       subTitle!,
-                      maxFontSize: 20,
-                      minFontSize: 18,
-                      maxLines: 2,
                       style: TextStyle(
                         color: Colors.brown[600],
-                        fontSize: 20,
+                        fontSize: 18,
                       ),
                     ),
-                    const Spacer(
-                      flex: 2,
-                    ),
+                    const Spacer(),
                   ],
                 ),
               ),

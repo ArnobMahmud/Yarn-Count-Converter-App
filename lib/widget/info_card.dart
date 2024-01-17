@@ -1,14 +1,12 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import '../models/conversion_info.dart';
 
 class InfoCard extends StatelessWidget {
-  final CountInfo countInfo;
+  final CountInfo? countInfo;
   const InfoCard({super.key, required this.countInfo});
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
 
     return Padding(
       padding: const EdgeInsets.all(20.0),
@@ -29,28 +27,23 @@ class InfoCard extends StatelessWidget {
             )
           ],
         ),
-        height: height * .45,
-        width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Spacer(),
             Text(
-              countInfo.title!,
+              countInfo!.title!,
               style: const TextStyle(
                 color: Color(0xffedd59e),
-                fontSize: 24,
+                fontSize: 18,
               ),
             ),
             const Spacer(),
-            AutoSizeText(
-              countInfo.desc!,
-              maxLines: 12,
-              maxFontSize: 16,
-              minFontSize: 14,
+            Text(
+              countInfo!.desc!,
               style: const TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 color: Color(0xffe2c28e),
                 fontWeight: FontWeight.w500,
               ),

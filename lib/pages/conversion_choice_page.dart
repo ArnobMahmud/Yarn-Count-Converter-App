@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:mdi/mdi.dart';
 import '../widget/method_card.dart';
@@ -47,7 +46,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
             style: TextStyle(
               fontWeight: FontWeight.w400,
               color: Color(0xffa58d7f),
-              fontSize: 30,
+              fontSize: 20,
             ),
           ),
         ),
@@ -56,23 +55,19 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-              left: 10,
-              right: 10,
-              top: 5,
-              bottom: 5,
+              left: 20,
+              right: 20,
             ),
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Flexible(
-                  child: AutoSizeText(
-                    'Yarn Count is an integral part of the Textile industry. The spinning mills or weaving mills can not run without it as product costing fully depends on it.',
-                    maxLines: 5,
-                    minFontSize: 17,
-                    maxFontSize: 19,
+                Expanded(
+                  child: Text(
+                    '''Yarn Count is an integral part of the Textile industry. The spinning mills or weaving mills can not run without it as product costing fully depends on it.''',
                     style: TextStyle(
                       color: Colors.brown[400],
-                      fontSize: 19,
+                      fontSize: 16,
                     ),
                   ),
                 ),
@@ -81,15 +76,15 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
                 ),
                 Image.asset(
                   'images/thread.png',
-                  height: 130,
-                  width: 130,
+                  height: 120,
+                  width: 120,
                   fit: BoxFit.cover,
                 ),
               ],
             ),
           ),
           const SizedBox(
-            height: 40,
+            height: 30,
           ),
           Expanded(
             child: Container(
@@ -97,14 +92,18 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
               decoration: const BoxDecoration(
                 color: Color(0xffb69e87),
                 borderRadius: BorderRadius.only(
-                  //topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 ),
               ),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: ListView(
-                  padding: const EdgeInsets.only(top: 30, left: 0, right: 10),
+                  padding: const EdgeInsets.only(
+                    top: 20,
+                    left: 0,
+                    right: 10,
+                    bottom: 20,
+                  ),
                   scrollDirection: Axis.horizontal,
                   children: [
                     MethodCard(

@@ -26,7 +26,7 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
           child: const Text(
             'Direct to Direct',
             style: TextStyle(
-              fontSize: 24,
+              fontSize: 18,
               color: Color(0xff5c4450),
               fontWeight: FontWeight.w500,
               letterSpacing: 1,
@@ -36,7 +36,7 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back_ios,
-            size: 25,
+            size: 20,
             color: Color(0xffa58d7f),
           ),
           onPressed: () {
@@ -45,12 +45,12 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
         ),
       ),
       body: GridView.builder(
-        padding: const EdgeInsets.fromLTRB(15, 15, 15, 25),
+        padding: const EdgeInsets.all(15),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20,
+          crossAxisSpacing: 15,
+          mainAxisSpacing: 15,
           crossAxisCount: 2,
-          childAspectRatio: aspectRatio / .9,
+          childAspectRatio: aspectRatio / .85,
         ),
         itemCount: conversionInfo.length,
         itemBuilder: (BuildContext context, int index) => SegmentChoice(
