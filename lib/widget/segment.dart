@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../models/conversion_info.dart';
 
 class SegmentChoice extends StatelessWidget {
@@ -13,7 +14,7 @@ class SegmentChoice extends StatelessWidget {
         Navigator.pushNamed(context, conversionInfo.nav!);
       },
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         decoration: const BoxDecoration(
           boxShadow: [
             BoxShadow(
@@ -29,6 +30,7 @@ class SegmentChoice extends StatelessWidget {
           ),
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const SizedBox(
               height: 10,
@@ -57,10 +59,12 @@ class SegmentChoice extends StatelessWidget {
             ),
             Text(
               conversionInfo.subTitle!,
-              style: const TextStyle(
+              style: GoogleFonts.lato(
                 fontSize: 16,
-                color: Color(0xfff6cefc),
+                color: const Color(0xfff6cefc),
               ),
+              maxLines: 6,
+              overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(
               height: 10,

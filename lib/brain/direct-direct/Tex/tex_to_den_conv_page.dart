@@ -11,7 +11,7 @@ class TexToDenConvPage extends StatefulWidget {
 
 class _TexToDenConvPageState extends State<TexToDenConvPage> {
   double tex = 0;
-  double lbsspytoden(tex) {
+  double textoden(tex) {
     if (tex <= 0) {
       return 0;
     }
@@ -44,7 +44,7 @@ class _TexToDenConvPageState extends State<TexToDenConvPage> {
           }
         },
         resultTitle: 'Count in Den - ',
-        result: lbsspytoden(tex).toStringAsFixed(2),
+        result: textoden(tex).toStringAsFixed(2),
       ),
     );
   }

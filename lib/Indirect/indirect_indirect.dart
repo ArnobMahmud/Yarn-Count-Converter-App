@@ -29,7 +29,6 @@ class _IndirectIndirectMethodState extends State<IndirectIndirectMethod> {
               fontSize: 18,
               color: const Color(0xff5c4450),
               fontWeight: FontWeight.w500,
-              letterSpacing: 1,
             ),
           ),
         ),
@@ -50,7 +49,7 @@ class _IndirectIndirectMethodState extends State<IndirectIndirectMethod> {
           crossAxisSpacing: 15,
           mainAxisSpacing: 15,
           crossAxisCount: 2,
-          childAspectRatio: aspectRatio / .85,
+          childAspectRatio: aspectRatio /.9,
         ),
         itemCount: conversionInfo.length,
         itemBuilder: (BuildContext context, int index) => SegmentChoice(

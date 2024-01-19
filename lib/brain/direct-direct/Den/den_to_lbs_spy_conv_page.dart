@@ -15,7 +15,7 @@ class _DenToLbsSpyConvPageState extends State<DenToLbsSpyConvPage> {
     if (den <= 0) {
       return 0;
     }
-    return 5314.5 / den;
+    return 0.003 * den;
   }
 
   @override

@@ -118,11 +118,11 @@ class InfoPage extends StatelessWidget {
                         countInfo[index].title!,
                         style: const TextStyle(
                           color: Color(0xffedd59e),
-                          fontSize: 18,
+                          fontSize: 20,
                         ),
                       ),
                       const SizedBox(
-                        height: 15,
+                        height: 10,
                       ),
                       Text(
                         countInfo[index].desc!,

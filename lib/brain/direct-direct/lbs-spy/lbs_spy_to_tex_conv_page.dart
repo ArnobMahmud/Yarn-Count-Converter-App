@@ -15,7 +15,7 @@ class _LbsSpyToTexConvPageState extends State<LbsSpyToTexConvPage> {
     if (lbsspy <= 0) {
       return 0;
     }
-    return 5314.5 / lbsspy;
+    return 35.09 * lbsspy;
   }
 
   @override

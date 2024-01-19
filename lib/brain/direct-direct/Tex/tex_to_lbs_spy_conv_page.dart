@@ -11,11 +11,11 @@ class TexToLbsSpyConvPage extends StatefulWidget {
 
 class _TexToLbsSpyConvPageState extends State<TexToLbsSpyConvPage> {
   double tex = 0;
-  double lbsspytolbsspy(tex) {
+  double textolbsspy(tex) {
     if (tex <= 0) {
       return 0;
     }
-    return 5314.5 / tex;
+    return 0.028 * tex;
   }
 
   @override
@@ -44,7 +44,7 @@ class _TexToLbsSpyConvPageState extends State<TexToLbsSpyConvPage> {
           }
         },
         resultTitle: 'Count in lbs/spy - ',
-        result: lbsspytolbsspy(tex).toStringAsFixed(2),
+        result: textolbsspy(tex).toStringAsFixed(2),
       ),
     );
   }
