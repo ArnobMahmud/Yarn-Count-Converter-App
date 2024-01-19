@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yarn_count_converter/info/developer_page.dart';
 import 'Direct/direct_direct.dart';
 import 'Direct/direct_indirect.dart';
 import 'Indirect/indirect_direct.dart';
@@ -69,6 +70,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomePage(),
         '/convpage': (context) => const ConversionChoicePage(),
         '/infopage': (context) => const InfoPage(),
+        '/developerpage': (context) => const DeveloperPage(),
         '/directindirectmethod': (context) => const DirectIndirectMethod(),
         '/indirectdirectmethod': (context) => const IndirectDirectMethod(),
         '/indirectindirectmethod': (context) => const IndirectIndirectMethod(),

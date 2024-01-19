@@ -60,7 +60,6 @@ class SegmentChoice extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 16,
                 color: Color(0xfff6cefc),
-                fontWeight: FontWeight.w500,
               ),
             ),
             const SizedBox(

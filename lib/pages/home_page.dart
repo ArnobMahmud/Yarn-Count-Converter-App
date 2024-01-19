@@ -18,14 +18,16 @@ class HomePage extends StatelessWidget {
               size: 26,
               color: Color.fromARGB(255, 87, 111, 122),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, ('/developerpage'));
+            },
           )
         ],
-        title: const Text(
+        title: Text(
           'Yarn Count Converter',
-          style: TextStyle(
+          style: GoogleFonts.lato(
             fontSize: 16,
-            color: Color.fromARGB(255, 80, 122, 143),
+            color: const Color.fromARGB(255, 80, 122, 143),
             fontWeight: FontWeight.w400,
             letterSpacing: 1,
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
 import '../widget/method_card.dart';
 
@@ -65,7 +66,7 @@ class _ConversionChoicePageState extends State<ConversionChoicePage> {
                 Expanded(
                   child: Text(
                     '''Yarn Count is an integral part of the Textile industry. The spinning mills or weaving mills can not run without it as product costing fully depends on it.''',
-                    style: TextStyle(
+                    style: GoogleFonts.lato(
                       color: Colors.brown[400],
                       fontSize: 16,
                     ),

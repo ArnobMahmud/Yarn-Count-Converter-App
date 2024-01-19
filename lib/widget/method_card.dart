@@ -58,7 +58,7 @@ class MethodCard extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.blueGrey[700],
-                          fontSize: 20,
+                          fontSize: 18,
                         ),
                       ),
                     ),
@@ -69,7 +69,7 @@ class MethodCard extends StatelessWidget {
                       subTitle!,
                       style: TextStyle(
                         color: Colors.brown[600],
-                        fontSize: 18,
+                        fontSize: 16,
                       ),
                     ),
                     const Spacer(),

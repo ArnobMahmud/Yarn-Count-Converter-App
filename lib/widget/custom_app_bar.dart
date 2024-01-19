@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomAppBar extends StatelessWidget {
   final String? title;
@@ -7,6 +8,7 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      scrolledUnderElevation: 0.0,
       leading: IconButton(
         icon: const Icon(
           Icons.arrow_back_ios,
@@ -20,10 +22,10 @@ class CustomAppBar extends StatelessWidget {
       backgroundColor: const Color(0xffdccdbc),
       title: Text(
         title!,
-        style: TextStyle(
+        style: GoogleFonts.lato(
           color: Colors.blueGrey[400],
           fontWeight: FontWeight.w400,
-          fontSize: 22,
+          fontSize: 20,
         ),
       ),
     );

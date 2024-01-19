@@ -15,7 +15,7 @@ class _DenToTexConvPageState extends State<DenToTexConvPage> {
     if (den <= 0) {
       return 0;
     }
-    return 5314.5 / den;
+    return den / 9;
   }
 
   @override

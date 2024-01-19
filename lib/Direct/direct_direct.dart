@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../db/info_dir_dir.dart';
 import '../widget/segment.dart';
 
@@ -19,15 +20,16 @@ class _DirectDirectMethodState extends State<DirectDirectMethod> {
     return Scaffold(
       backgroundColor: const Color(0xffebced5),
       appBar: AppBar(
+      scrolledUnderElevation: 0.0,
         elevation: 0,
         backgroundColor: const Color(0xffebced5),
         title: Transform(
           transform: Matrix4.translationValues(-20.0, 0.0, 0.0),
-          child: const Text(
+          child: Text(
             'Direct to Direct',
-            style: TextStyle(
+            style: GoogleFonts.lato(
               fontSize: 18,
-              color: Color(0xff5c4450),
+              color: const Color(0xff5c4450),
               fontWeight: FontWeight.w500,
               letterSpacing: 1,
             ),

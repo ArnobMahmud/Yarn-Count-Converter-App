@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../db/count_info.dart';
 
 class InfoPage extends StatelessWidget {
@@ -9,6 +10,7 @@ class InfoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xffd1b399),
       appBar: AppBar(
+      scrolledUnderElevation: 0.0,
         backgroundColor: const Color(0xffd1b399),
         elevation: 0.0,
         leading: IconButton(
@@ -124,10 +126,9 @@ class InfoPage extends StatelessWidget {
                       ),
                       Text(
                         countInfo[index].desc!,
-                        style: const TextStyle(
+                        style:  GoogleFonts.lato(
                           fontSize: 16,
-                          letterSpacing: 1,
-                          color: Color(0xffe2c28e),
+                          color:const Color(0xffe2c28e),
                           fontWeight: FontWeight.w400,
                         ),
                       ),

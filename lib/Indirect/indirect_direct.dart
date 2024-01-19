@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../db/info_ind_dir.dart';
 import '../widget/segment.dart';
 
@@ -12,22 +13,21 @@ class IndirectDirectMethod extends StatefulWidget {
 class _IndirectDirectMethodState extends State<IndirectDirectMethod> {
   @override
   Widget build(BuildContext context) {
-    //final height = MediaQuery.of(context).size.height;
-    //final width = MediaQuery.of(context).size.width;
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
 
     return Scaffold(
       backgroundColor: const Color(0xffebced5),
       appBar: AppBar(
+        scrolledUnderElevation: 0.0,
         elevation: 0,
         backgroundColor: const Color(0xffebced5),
         title: Transform(
           transform: Matrix4.translationValues(-20.0, 0.0, 0.0),
-          child: const Text(
+          child: Text(
             'Indirect to Direct',
-            style: TextStyle(
+            style: GoogleFonts.lato(
               fontSize: 18,
-              color: Color(0xff5c4450),
+              color: const Color(0xff5c4450),
               fontWeight: FontWeight.w500,
               letterSpacing: 1,
             ),

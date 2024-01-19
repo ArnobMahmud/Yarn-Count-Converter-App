@@ -15,7 +15,7 @@ class _NeToDenConvPageState extends State<NeToDenConvPage> {
     if (ne == 0) {
       return 0;
     }
-    return 5314.5 / ne;
+    return 5315 / ne;
   }
 
   @override
