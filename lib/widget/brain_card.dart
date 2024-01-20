@@ -77,7 +77,7 @@ class _BrainCardState extends State<BrainCard> {
                     ),
                   ],
                 ),
-                height: height * .6,
+                height: height * .65,
                 width: double.infinity,
                 child: Center(
                   child: Column(

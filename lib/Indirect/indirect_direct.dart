@@ -44,7 +44,7 @@ class _IndirectDirectMethodState extends State<IndirectDirectMethod> {
         ),
       ),
       body: GridView.builder(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(10),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisSpacing: 15,
           mainAxisSpacing: 15,

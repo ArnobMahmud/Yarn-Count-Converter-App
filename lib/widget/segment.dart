@@ -33,7 +33,7 @@ class SegmentChoice extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
             Image.asset(
               'images/yarn8.png',
@@ -42,20 +42,20 @@ class SegmentChoice extends StatelessWidget {
               fit: BoxFit.cover,
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
             Text(
               conversionInfo.title!,
-              style: const TextStyle(
-                fontSize: 18,
-                color: Color(0xffc0bfc7),
-                fontWeight: FontWeight.w500,
+              style: GoogleFonts.ubuntu(
+                fontSize: 20,
+                color: const Color.fromARGB(255, 26, 24, 38),
+                fontWeight: FontWeight.w600,
                 letterSpacing: 1,
               ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
             Text(
               conversionInfo.subTitle!,
@@ -67,7 +67,7 @@ class SegmentChoice extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(
-              height: 10,
+              height: 5,
             ),
           ],
         ),

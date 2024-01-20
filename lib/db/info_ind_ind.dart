@@ -97,7 +97,7 @@ final List<ConversionInfo> conversionInfo = [
     title: 'NeS - Nm',
     subTitle:
         'NeW (Number worsted) is an indirect count & Nm (Number metric) is an indirect count',
-    nav: '/nestonw',
+    nav: '/nestonm',
   ),
   ConversionInfo(
     id: 15,
